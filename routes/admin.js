@@ -1,29 +1,35 @@
 const {Router} = require('express');
 const adminRouter = Router();
 
-adminRouter.post('/Signin',function(req, res){
+adminRouter.post('/signin',function(req, res){
     res.json({
         message: "Admin signed in"
     })
 })
 
-adminRouter.post('/Signup',function(req, res){
+adminRouter.post('/signup',function(req, res){
     res.json({
         message: "Admin signed up"
     })
 })
 
-adminRouter.post('/Create', function(req, res){
+adminRouter.post('/course', function(req, res){
     message: "Course added"
 })
 
-adminRouter.delete('/Delete',function(req, res){
+adminRouter.put('/course',function(req, res){
     res.json({
         message: "Course Deleted"
     })
 })
 
-adminRouter.post('/Content', function(req, res){
+adminRouter.delete('/course', function(req, res){
+    res.json({
+        message: "Content added"
+    })
+})
+
+adminRouter.get('/course/bulk', function(req, res){
     res.json({
         message: "Content added"
     })
