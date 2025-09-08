@@ -1,5 +1,5 @@
-const {Router} = require('express');
-const userRouter = Router();
+const express  = require ("express");
+const userRouter = express.Router();
 
         userRouter.post('/login', function(req, res){
         res.json({
@@ -19,6 +19,7 @@ const userRouter = Router();
             })
         })
 
-module.exports =  {
+module.exports = {
     userRouter: userRouter
 }
+

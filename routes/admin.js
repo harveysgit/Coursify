@@ -1,5 +1,8 @@
-const {Router} = require('express');
-const adminRouter = Router();
+const express = require("express");
+const adminRouter = express.Router();
+
+console.log("connect to the database");
+const adminModel = require('../db');
 
 adminRouter.post('/signin',function(req, res){
     res.json({
