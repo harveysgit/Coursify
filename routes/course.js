@@ -2,6 +2,7 @@ const express = require('express')
 const courseRouter = express.Router();
 
     courseRouter.post("/purchase", function(req, res){
+        r
         res.json({
             message: "your purchased courses"
         })

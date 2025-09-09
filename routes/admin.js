@@ -5,6 +5,10 @@ console.log("connect to the database");
 const adminModel = require('../db');
 
 adminRouter.post('/signin',function(req, res){
+    const username = req.username;
+    const password = req. password;
+    
+
     res.json({
         message: "Admin signed in"
     })
